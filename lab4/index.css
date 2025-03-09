@@ -1,0 +1,270 @@
+.main-body {
+  background-color: #bdabab;
+  display: grid;
+  grid-template-rows: 10vh 80vh auto;
+  height: 100vh;
+  margin: 0;
+}
+
+/* NAV-BAR */
+
+.nav-bar {
+  height: 10vh;
+  background-color: #20147f;
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 3%;
+
+}
+
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar a:hover {
+  background-color: white;
+  color: #20147f;
+  cursor: pointer;
+}
+
+.nav-bar li {
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 600;
+  font-size: large;
+  padding: 10px 10px;
+}
+
+.nav-bar header {
+  height: 100%;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 1000;
+  font-size: larger;
+}
+
+
+
+/* FOOTER */
+
+.footer {
+  background-color: black;
+  display: flex;
+  justify-content: left;
+  place-items: center;
+}
+
+.footer p {
+  color: white;
+  margin-left: 5vw;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+
+/* SECÇÃO DO ARTIGO E FORM */
+.main {
+  display: grid;
+  grid-template-columns: 12vw auto 13vw;
+  padding: 15px;
+}
+
+/* SIDE BAR */
+.main aside {
+  display: grid;
+  grid-template-rows: 10vh auto;
+  margin: 5%;
+}
+
+.bg-title-aside {
+  background-color: #2d2d2d;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+  display: flex;
+  align-items: center;
+}
+
+.bg-body-aside {
+  display: grid;
+  grid-template-rows: repeat(5vh);
+
+  background-color: wheat;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.main ul {
+  margin-top: 5%;
+  width: 100%;
+  list-style: none;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.main aside h3 {
+  text-align: center;
+  color: whitesmoke;
+}
+
+.main a {
+  text-decoration: none;
+  color: black;
+}
+
+.main a:hover {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+}
+
+
+
+/* Artigo principal */
+
+
+/* TÍTULO DO ARTIGO */
+.main article {
+  display: grid;
+  grid-template-rows: 10vh auto;
+  margin: 10px;
+
+  overflow: hidden;
+}
+
+.article-title {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #2d2d2d;
+
+  display: flex;
+  align-items: center;
+}
+
+.article-title h2 {
+  padding-left: 1.5%;
+  color: whitesmoke;
+  text-align: left;
+}
+
+/* CORPO DO ARTIGO */
+
+.article-body {
+  background-color: wheat;
+  display: grid;
+  grid-template-columns: 55% auto;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.image {
+  overflow: hidden;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-bottom-left-radius: 15px;
+}
+
+.article-body p {
+  padding-left: 15px;
+  overflow: hidden;
+  font-size: large;
+  text-align: left;
+  text-indent: 5%;
+}
+
+/* FORMS */
+
+.form {
+  display: grid;
+  grid-template-rows: 10vh auto;
+  margin: 10px;
+}
+
+.title-forms {
+  background-color: #2d2d2d;
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: whitesmoke;
+}
+
+.body-forms {
+  background-color: wheat;
+  padding-top: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+
+  display: grid;
+  grid-template-rows: 7vh 7vh 40vh 5vh;
+}
+
+.body-forms input {
+  width: 90%;
+  margin-left: 3.5%;
+
+  overflow: scroll;
+  background-color: white;
+  border-style: inset;
+}
+
+.body-forms input:focus {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+#mensagem {
+  height: 80%;
+  width: 96%;
+}
+
+.body-forms button {
+  height: 75%;
+  width: 93%;
+
+  margin-left: 3.5%;
+}
+
+.body-forms button:hover {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+.body-forms textarea {
+  border-style: inset;
+  height: 85%;
+  width: 90%;
+  margin-left: 3.5%;
+
+  resize: none;
+}
+
+.body-forms textarea:hover {
+  border-style: inset;
+  background-color: #2d2d2d;
+  color: white;
+}
+
+.body-forms label {
+  margin-left: 3.5%;
+}
