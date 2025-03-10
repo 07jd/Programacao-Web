@@ -1,3 +1,4 @@
+/* Divisão da pagina em 3 */
 .main-body {
   background-color: #bdabab;
   display: grid;
@@ -55,7 +56,6 @@
 
 
 /* FOOTER */
-
 .footer {
   background-color: black;
   display: flex;
@@ -74,7 +74,7 @@
 }
 
 
-/* SECÇÃO DO ARTIGO E FORM */
+/* DIVISÃO DA SECÇÃO DO ARTIGO E FORM em |12|restante|13| */
 .main {
   display: grid;
   grid-template-columns: 12vw auto 13vw;
