@@ -259,7 +259,7 @@
   resize: none;
 }
 
-.body-forms textarea:hover {
+.body-forms textarea:focus {
   border-style: inset;
   background-color: #2d2d2d;
   color: white;
