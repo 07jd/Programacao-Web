@@ -68,6 +68,8 @@ liRem.addEventListener("click", function () {
 //Remover elementos tipo 'li' quando clicados
 liConteudo.addEventListener("click", function (e) {
   if (e.target.tagName === "LI") {
+    console.log("Rem elemento (via click)");
+
     elementos--;
     e.target.remove();
   }
