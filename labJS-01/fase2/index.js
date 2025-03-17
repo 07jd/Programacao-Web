@@ -7,6 +7,7 @@ const enterCliques = document.getElementById("enter-count");
 const liAdd = document.getElementById("lista-add");
 const liRem = document.getElementById("lista-rem");
 const liConteudo = document.getElementById("lista-conteudo");
+const textBox = document.getElementById("input-text");
 
 //Ao carregar página mudar texto de h1, e atualizar o texto sobre os counters
 document.addEventListener("DOMContentLoaded", function () {
@@ -39,6 +40,9 @@ document.addEventListener("keypress", function (event) {
     //Alterar count
     clicks_enter++;
     enterCliques.textContent = clicks_enter;
+
+    let content = textBox.value;
+    console.log("Texto da textBox -> " + content);
   }
 }
 );
