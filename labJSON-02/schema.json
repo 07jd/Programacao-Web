@@ -8,7 +8,8 @@
       "type": "object",
       "properties": {
         "ProductID": {
-          "type": "string"
+          "type": "string",
+          "pattern": "[0-9]+" 
         },
         "Category": {
           "type": "string"
@@ -20,7 +21,8 @@
           "type": "string"
         },
         "Price": {
-          "type": "string"
+          "type": "string",
+          "pattern": "[+]?([0-9]*[.])?[0-9]+"
         },
         "Class": {
           "type": "string"
