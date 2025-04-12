@@ -10,7 +10,7 @@ app.use(express.json());
 // http://localhost:3000
 app.get("/", (req, res) => {
   console.log("GET / : Lab Node-01");
-  res.send("Array -> " + minhas_notas.toString());
+  res.status(200).send("Array -> " + minhas_notas.toString());
 });
 
 //3b
@@ -91,7 +91,6 @@ app.post("/:novoValor", (req,res) => {
   }
 });
 
-
 //3e
 // curl -X PATCH http://localhost:3000/0 -H "Content-Type: application/json" -d '{"valor": 1234}'
 app.patch("/:indice", (req,res) => {
@@ -120,10 +119,10 @@ app.patch("/:indice", (req,res) => {
 
     console.log("Valor do indice selecionado foi alterado!");
     minhas_notas[indice] = inputBody;
-    res.send("Valor alterado com sucesso!");
+    res.status(200).send("Valor alterado com sucesso!");
   } catch (err) {
     console.log(err);
-    res.send("Não foi possível alterar o valor no indice selecionado!");
+    res.status(400).send("Não foi possível alterar o valor no indice selecionado!");
   }
 });
 
@@ -146,10 +145,10 @@ app.delete("/:indice", (req,res) => {
 
     console.log("Valor do indice selecionado removido!");
     minhas_notas.splice(indice, 1);
-    res.send("Valor removido com sucesso!");
+    res.status(200).send("Valor removido com sucesso!");
   } catch (err) {
     console.log(err);
-    res.send("Não foi possível remover o valor no indice selecionado!");
+    res.status(400).send("Não foi possível remover o valor no indice selecionado!");
   }
 });
 
