@@ -7,14 +7,12 @@ let minhas_notas = [20, 10, 15, 17];
 app.use(express.json());
 
 //3a
-// http://localhost:3000
 app.get("/", (req, res) => {
   console.log("GET / : Lab Node-01");
   res.status(200).send("Array -> " + minhas_notas.toString());
 });
 
 //3b
-// http://localhost:3000/0
 app.get("/:indice", (req, res) => {
   const input = req.params.indice;
 
@@ -40,7 +38,6 @@ app.get("/:indice", (req, res) => {
 });
 
 //3c
-// curl -X POST http://localhost:3000/ -H "Content-Type: application/json" -d '{"valor": 99}'
 app.post("/", (req,res) => {
   const input = req.body;
 
@@ -71,7 +68,6 @@ app.post("/", (req,res) => {
 });
 
 //3d
-// curl -X POST http://localhost:3000/99
 app.post("/:novoValor", (req,res) => {
   const input = req.params.novoValor;
 
@@ -92,7 +88,6 @@ app.post("/:novoValor", (req,res) => {
 });
 
 //3e
-// curl -X PATCH http://localhost:3000/0 -H "Content-Type: application/json" -d '{"valor": 1234}'
 app.patch("/:indice", (req,res) => {
   const input = req.params.indice;
   const inputBody = req.body.valor;
@@ -127,7 +122,6 @@ app.patch("/:indice", (req,res) => {
 });
 
 //3f
-// curl -X DELETE http://localhost:3000/0
 app.delete("/:indice", (req,res) => {
   const input = req.params.indice;
 
@@ -153,7 +147,6 @@ app.delete("/:indice", (req,res) => {
 });
 
 //3g
-// curl -X DELETE http://localhost:3000/
 app.delete("/", (req,res) => {
   if(minhas_notas.length > 0){
     minhas_notas.length = 0;
