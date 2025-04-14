@@ -12,9 +12,9 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.get("/:id", (req, res) => {
+router.get("/:id", async (req, res) => {
   try{
-    const nota = NotaModelo.findById(req.params.id);
+    const nota = await NotaModelo.findById(req.params.id);
 
     if(!nota){
       throw new Error("Nota não foi encontrada!");
